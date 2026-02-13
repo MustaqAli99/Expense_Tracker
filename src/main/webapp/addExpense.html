@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Expense</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<h2>Add Expense</h2>
+<form action="AddExpenseServlet" method="post">
+    <input type="text" name="title" placeholder="Title" required>
+    <input type="number" name="amount" placeholder="Amount" required>
+    <input type="date" name="date" placeholder="Date" required>
+    <select name="category">
+	<option>Select Category</option>
+	<option>Food</option>
+	<option>Travel</option>
+	<option>Shopping</option>
+	<option>Education</option>
+	</select>
+    <button type="submit">Add</button>
+    
+</form>
+</div>
+</body>
+</html>
