@@ -2,18 +2,75 @@
 <html>
 <head>
 <title>Add Expense</title>
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+</style>
+
 </head>
+
 <body>
+
 <div class="container">
+
 <h2>Add Expense</h2>
+
 <form action="addexpense" method="post">
-    <input type="text" name="title" placeholder="Title" required>
-    <input type="number" name="amount" placeholder="Amount" required>
-    <input type="date" name="date" placeholder="Date" required>
-    <input type="text" name="category" placeholder="Category" required>
-    <button type="submit">Add</button>
+
+<input type="text" name="title" placeholder="Expense Title" required>
+
+<input type="number" step="0.01" name="amount" placeholder="Amount" required>
+
+<input type="date" name="date" required>
+
+<select name="category" required>
+<option value="">Select Category</option>
+<option>Food</option>
+<option>Travel</option>
+<option>Bills</option>
+<option>Shopping</option>
+<option>Entertainment</option>
+</select>
+
+<button type="submit">Add Expense</button>
+
 </form>
+
 </div>
+
 </body>
 </html>

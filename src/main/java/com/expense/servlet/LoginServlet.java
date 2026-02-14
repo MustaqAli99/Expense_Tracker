@@ -35,8 +35,8 @@ public class LoginServlet extends HttpServlet {
             	httpSession.setAttribute("email", email);
             	httpSession.setAttribute("password", password);
             	
-            	RequestDispatcher dispatcher=req.getRequestDispatcher("homepage");
-            	dispatcher.forward(req, res);
+            	res.sendRedirect("homepage.html");
+
             } else {
                 res.getWriter().println("<h1>Invalid Login..Please Try Again...</h1>");
                 RequestDispatcher dispatcher = req.getRequestDispatcher("login.html");

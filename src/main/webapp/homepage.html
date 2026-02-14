@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Dashboard</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Expense Dashboard</h2>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>Filter Expenses</h3>
+
+<form action="homepage" method="get">
+
+<label>Date:</label>
+<input type="date" name="date">
+
+<label>Category:</label>
+<select name="category">
+<option value="">All</option>
+<option>Food</option>
+<option>Travel</option>
+<option>Bills</option>
+<option>Shopping</option>
+<option>Entertainment</option>
+</select>
+
+<button type="submit">Apply Filter</button>
+
+</form>
+
+<a href="homepage">
+<button>View All</button>
+</a>
+
+<a href="addExpense.html">
+<button>Add Expense</button>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
