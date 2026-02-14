@@ -20,7 +20,7 @@ public class HomePage extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse res)
             throws IOException {
-
+       
         HttpSession session = req.getSession();
         int userId = (int) session.getAttribute("id");
 
@@ -29,7 +29,8 @@ public class HomePage extends HttpServlet {
 
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-
+        out.println("<h1>Homepage servlet reached</h1>");
+        
         double total = 0;
 
         try (Connection con = DBConnection.getConnection()) {
