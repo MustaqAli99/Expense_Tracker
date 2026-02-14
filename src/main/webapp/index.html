@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Tracker</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #1d2671, #c33764);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass card */
+.container {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #3498db;
+    color: white;
+}
+
+.signup-btn {
+    background: #2ecc71;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> Expense Tracker</h1>
+
+<p>Track your spending smartly</p>
+
+<a href="login.html">
+<button class="login-btn">Login</button>
+</a>
+
+<a href="signup.html">
+<button class="signup-btn">Sign Up</button>
+</a>
+
+</div>
+
+</body>
+</html>
